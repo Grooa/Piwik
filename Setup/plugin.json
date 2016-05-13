@@ -1,0 +1,64 @@
+{
+	"title": "Piwik Web Analytics",
+	"version": "1.01",
+	"name": "Piwik",
+	"description": "Piwik web analytics integration for tracking your visitors",
+	"author": "Truls Rustad Fossum",
+	"options": [
+		{
+			"label": "Piwik URL",
+			"name": "url",
+			"hint": "URL to your Piwik installation without a trialing slash",
+			"type": "Url",
+			"default": ""
+		},
+		{
+			"label": "Site ID",
+			"name": "siteId",
+			"type": "Number",
+			"validators": [
+				"Number"
+			],
+			"default": ""
+		},
+		{
+			"label": "Tracked events",
+			"name": "trackedEvents",
+			"type": "Checkboxes",
+			"default": "",
+			"values": [
+				["trackPageView", "Page views"],
+				["enableLinkTracking", "Links"]
+			]
+		},
+		{
+			"label": "Heart beat interval",
+			"name": "heartBeatInterval",
+			"note": "In seconds, set to 0 to disable",
+			"type": "Number",
+			"validators": [
+				"Number"
+			],
+			"default": 0
+		},
+		{
+			"label": "User tracking field",
+			"name": "userTrackingField",
+			"note": "Field reported to Piwik for user identification",
+			"type": "Select",
+			"default": "",
+			"values": [
+				["", "None"],
+				["id", "User ID"],
+				["email", "E-mail"]
+			]
+		},
+		{
+			"label": "Authentication token",
+			"name": "authToken",
+			"note": "This is the token_auth found in Piwik",
+			"type": "Text",
+			"default": ""
+		}
+	]
+}

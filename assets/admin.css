@@ -1,0 +1,5 @@
+/* Hack to fill height and width */
+iframe.ipPluginPiwik {
+	width: 100%;
+	height: 2000px;
+}
