@@ -26,7 +26,7 @@ class Event
 			function ($name) {
 				return array($name);
 			},
-			ipGetOption('Piwik.trackedEvents')
+			ipGetOption('Piwik.trackedEvents', array())
 		);
 
 		// Heart beat timer
